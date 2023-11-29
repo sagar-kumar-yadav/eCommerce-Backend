@@ -28,8 +28,8 @@ router.post(
       maxCount: 5,
     },
   ]),
-  // requireSignIn,
-  // isAdmin,
+  requireSignIn,
+  isAdmin,
   createProductController
 );
 
