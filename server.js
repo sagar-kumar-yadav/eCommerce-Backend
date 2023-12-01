@@ -18,8 +18,14 @@ connectDB();
 // rest object
 const app = express();
 
+const corsOptions = {
+  origin: '*', // Replace '*' with your frontend URL for production
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  allowedHeaders: 'Origin,X-Requested-With,Content-Type,Accept,Authorization',
+};
+
 // middlewares
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(morgan("dev"));
 
