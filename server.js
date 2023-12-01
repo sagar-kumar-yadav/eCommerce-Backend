@@ -20,7 +20,7 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://urbanethnic.netlify.app/",
+  "https://urbanethnic.netlify.app",
 ];
 
 // middlewares
