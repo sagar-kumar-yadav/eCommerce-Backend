@@ -19,9 +19,9 @@ connectDB();
 const app = express();
 
 const corsOptions = {
-  origin: 'https://urbanethnic.netlify.app/', // Replace '*' with your frontend URL for production
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  allowedHeaders: 'Origin,X-Requested-With,Content-Type,Accept,Authorization',
+  origin: "*", // Replace '*' with your frontend URL for production
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  allowedHeaders: "Origin,X-Requested-With,Content-Type,Accept,Authorization",
 };
 
 // middlewares
