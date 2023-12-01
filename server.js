@@ -21,7 +21,7 @@ const app = express();
 // middlewares
 app.use(
   cors({
-    origin: "https://ecommerce-backend-apis-xgxj.onrender.com",
+    origin: "http://localhost:5173",
   })
 );
 app.use(express.json());
